@@ -1,4 +1,4 @@
-const connectToMongo=require('./db');
+const connectToMongo = require('./db');
 const express = require('express')
 
 connectToMongo();
@@ -12,5 +12,5 @@ app.use('/api/auth', require('./Routes/auth'));
 app.use('/api/notes', require('./Routes/notes'));
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`Example app listening at http://localhost:${port}`) //connect to server
 })
